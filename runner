@@ -25,6 +25,9 @@ require 'vendor/autoload.php';
  * the program is terminated externally.
  */
 while(true) {
+    /**
+     * Your magic code ....
+     */
     sleep(5);
     print sprintf("[%s] loop iteration %s \n", date(DATE_RFC3339), $_ENV['ENV_TEST']);
 }
