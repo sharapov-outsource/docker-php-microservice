@@ -1,0 +1,16 @@
+{
+  "name": "sharapov/docker-php-microservice",
+  "description": "Simple playground of php microservice based on docker image",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alexander S.",
+      "email": "alexander@sharapov.biz"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*"
+  }
+}

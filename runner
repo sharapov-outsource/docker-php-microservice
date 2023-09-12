@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @copyright Sharapov A. <alexander@sharapov.biz>
+ * @link      http://www.sharapov.biz/
+ * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GNU General Public License
+ * Date: 28.04.2022
+ * Time: 13:06
+ */
+
+ini_set('display_errors', '1');
+error_reporting(E_ALL);
+date_default_timezone_set('UTC');
+
+if(!file_exists('vendor/autoload.php')) {
+    throw new Exception('Please install the dependencies first');
+}
+
+require 'vendor/autoload.php';
+
+/**
+ * This loop will continue running indefinitely until it is explicitly interrupted or
+ * the program is terminated externally.
+ */
+while(true) {
+    sleep(5);
+    print sprintf("[%s] loop iteration %s \n", date(DATE_RFC3339), $_ENV['ENV_TEST']);
+}
